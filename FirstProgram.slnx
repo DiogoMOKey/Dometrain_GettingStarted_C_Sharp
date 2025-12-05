@@ -1,3 +1,7 @@
 <Solution>
+  <Project Path="Constructors/Constructors.csproj" Id="1074f88f-e60a-4970-8740-e782e91581d2" />
+  <Project Path="DemoProgram/DemoProgram.csproj" Id="939c6971-9d2a-4396-b152-2c3729661011" />
+  <Project Path="Fields_&amp;_Properties/Fields_&amp;_Properties.csproj" Id="533e94b1-7ec9-46b4-a007-fa40ce168d16" />
   <Project Path="FirstProgram/FirstProgram.csproj" />
+  <Project Path="StaticVsInstances/StaticVsInstances.csproj" Id="3779782c-7f05-4e51-9340-3588b2cb90a5" />
 </Solution>
