@@ -31,10 +31,41 @@ Console.WriteLine("myNumbers1 == myNumbers2");
 Console.WriteLine(myNumbers1 == myNumbers2);  //False - Thet are not the same object in memory
 
 
+void ChangeValue(int value)
+{
+    value = 42;
+}
+
+int myValue = 1337;
+Console.WriteLine("myValue before ChangeValue:");
+Console.WriteLine(myValue);  // 1337
+
+ChangeValue(myValue);  // It will only change inside it
+
+Console.WriteLine("myValue before ChangeValue:");  
+Console.WriteLine(myValue);  // 1337
 
 
+void ChangeReference(List<string> words)
+{
+    // words = new List<string>();  // This list only exist inside the function
+    words.Add("from");
+    words.Add("Dev");
+    words.Add("Leader");
+}
 
 
+List<string> myWords = new List<string> {"Hello", "World" };
+Console.WriteLine("myWords before ChangeReference:");
+Console.WriteLine(string.Join(" ", myWords)); // Hello World
+
+ChangeReference(myWords);
+
+Console.WriteLine("myWords after ChangeReference:");  //  Hello World from Dev Leader
+Console.WriteLine(string.Join(" ", myWords));
+
+
+ 
 
 
 
